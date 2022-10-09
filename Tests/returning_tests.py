@@ -9,6 +9,8 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(15, return_addtion.add_two(7, 8))
         self.assertEqual(45, return_addtion.add_two(40, 5))
         # Add two more tests of your own below here
+        self.assertEqual(5, return_addtion.total_value(2, 3))
+        self.assertEqual(20, return_addtion.total_value(12, 8))
 
     def test_triangle_area(self):
         self.assertEqual(6.0, triangle_area.area(3, 4, 5))
